@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 5px;
+}
+
+.wrapper {
+    background-color: #90ADC6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc {
+    background-color: #333652;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.input {
+    background-color: #FFFFFF;
+    margin-bottom: 5px;
+    width: 99%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.input p{
+    color: #24252F;
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+
+
+/* ------buttons------- */
+.button {
+    flex-grow: 2;
+    border-radius: 20%;
+    background-color: #E9EAEC;
+    color: #24252F;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    width: 23.5%;
+    height: 67px;
+    margin-bottom: 5px;
+}
+
+.button.plus{
+    background-color:#FAD02C;
+}
+
+.button.minus{
+    background-color:#FAD02C;
+}
+
+.button.div{
+    background-color:#FAD02C;
+}
+
+.button.mult{
+    background-color:#FAD02C;
+}
+
+.button.eq{
+    background-color:#FAD02C;
+}
+
+.button.clear{
+    background-color:#FAD02C;
+}
